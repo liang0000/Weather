@@ -12,6 +12,13 @@
 		B632FD792B95BDB000EE2CA8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FD782B95BDB000EE2CA8 /* HomeVC.swift */; };
 		B632FD7E2B95BDB300EE2CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B632FD7D2B95BDB300EE2CA8 /* Assets.xcassets */; };
 		B632FD812B95BDB300EE2CA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B632FD7F2B95BDB300EE2CA8 /* LaunchScreen.storyboard */; };
+		B632FD8B2B95DDE500EE2CA8 /* CityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FD8A2B95DDE500EE2CA8 /* CityVC.swift */; };
+		B632FD8F2B96109800EE2CA8 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FD8E2B96109800EE2CA8 /* Location.swift */; };
+		B632FD922B96164A00EE2CA8 /* WTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FD912B96164A00EE2CA8 /* WTError.swift */; };
+		B632FD962B961A7700EE2CA8 /* WTEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FD952B961A7700EE2CA8 /* WTEmptyStateView.swift */; };
+		B632FD982B961AC400EE2CA8 /* WTTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FD972B961AC400EE2CA8 /* WTTitleLabel.swift */; };
+		B632FD9C2B96225800EE2CA8 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FD9B2B96225800EE2CA8 /* UIViewController+Ext.swift */; };
+		B632FD9E2B9625B600EE2CA8 /* WTBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FD9D2B9625B600EE2CA8 /* WTBodyLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		B632FD7D2B95BDB300EE2CA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B632FD802B95BDB300EE2CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B632FD822B95BDB300EE2CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B632FD8A2B95DDE500EE2CA8 /* CityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityVC.swift; sourceTree = "<group>"; };
+		B632FD8E2B96109800EE2CA8 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		B632FD912B96164A00EE2CA8 /* WTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTError.swift; sourceTree = "<group>"; };
+		B632FD952B961A7700EE2CA8 /* WTEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTEmptyStateView.swift; sourceTree = "<group>"; };
+		B632FD972B961AC400EE2CA8 /* WTTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTTitleLabel.swift; sourceTree = "<group>"; };
+		B632FD9B2B96225800EE2CA8 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		B632FD9D2B9625B600EE2CA8 /* WTBodyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTBodyLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +70,75 @@
 			children = (
 				B632FD742B95BDB000EE2CA8 /* AppDelegate.swift */,
 				B632FD762B95BDB000EE2CA8 /* SceneDelegate.swift */,
-				B632FD782B95BDB000EE2CA8 /* HomeVC.swift */,
+				B632FD8C2B95DDEF00EE2CA8 /* Screens */,
+				B632FD932B961A1B00EE2CA8 /* Custom Views */,
+				B632FD902B96162200EE2CA8 /* Ultilities */,
+				B632FD8D2B96108200EE2CA8 /* Models */,
+				B632FD9A2B96223D00EE2CA8 /* Extensions */,
 				B632FD7D2B95BDB300EE2CA8 /* Assets.xcassets */,
 				B632FD7F2B95BDB300EE2CA8 /* LaunchScreen.storyboard */,
 				B632FD822B95BDB300EE2CA8 /* Info.plist */,
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		B632FD8C2B95DDEF00EE2CA8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B632FD782B95BDB000EE2CA8 /* HomeVC.swift */,
+				B632FD8A2B95DDE500EE2CA8 /* CityVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B632FD8D2B96108200EE2CA8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B632FD8E2B96109800EE2CA8 /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B632FD902B96162200EE2CA8 /* Ultilities */ = {
+			isa = PBXGroup;
+			children = (
+				B632FD912B96164A00EE2CA8 /* WTError.swift */,
+			);
+			path = Ultilities;
+			sourceTree = "<group>";
+		};
+		B632FD932B961A1B00EE2CA8 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				B632FD992B961ACB00EE2CA8 /* Labels */,
+				B632FD942B961A3D00EE2CA8 /* Views */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		B632FD942B961A3D00EE2CA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B632FD952B961A7700EE2CA8 /* WTEmptyStateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B632FD992B961ACB00EE2CA8 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				B632FD972B961AC400EE2CA8 /* WTTitleLabel.swift */,
+				B632FD9D2B9625B600EE2CA8 /* WTBodyLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		B632FD9A2B96223D00EE2CA8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B632FD9B2B96225800EE2CA8 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +212,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B632FD792B95BDB000EE2CA8 /* HomeVC.swift in Sources */,
+				B632FD962B961A7700EE2CA8 /* WTEmptyStateView.swift in Sources */,
+				B632FD982B961AC400EE2CA8 /* WTTitleLabel.swift in Sources */,
+				B632FD8B2B95DDE500EE2CA8 /* CityVC.swift in Sources */,
+				B632FD8F2B96109800EE2CA8 /* Location.swift in Sources */,
+				B632FD922B96164A00EE2CA8 /* WTError.swift in Sources */,
 				B632FD752B95BDB000EE2CA8 /* AppDelegate.swift in Sources */,
 				B632FD772B95BDB000EE2CA8 /* SceneDelegate.swift in Sources */,
+				B632FD9C2B96225800EE2CA8 /* UIViewController+Ext.swift in Sources */,
+				B632FD9E2B9625B600EE2CA8 /* WTBodyLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
