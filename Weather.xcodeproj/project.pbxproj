@@ -25,6 +25,7 @@
 		B632FDA92B971A9E00EE2CA8 /* BookmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FDA82B971A9E00EE2CA8 /* BookmarkCell.swift */; };
 		B632FDAC2B975A8100EE2CA8 /* WTItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FDAB2B975A8100EE2CA8 /* WTItemInfoView.swift */; };
 		B632FDAF2B975C2E00EE2CA8 /* CityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FDAE2B975C2E00EE2CA8 /* CityVC.swift */; };
+		B632FDB12B97846D00EE2CA8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FDB02B97846D00EE2CA8 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		B632FDA82B971A9E00EE2CA8 /* BookmarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCell.swift; sourceTree = "<group>"; };
 		B632FDAB2B975A8100EE2CA8 /* WTItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTItemInfoView.swift; sourceTree = "<group>"; };
 		B632FDAE2B975C2E00EE2CA8 /* CityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityVC.swift; sourceTree = "<group>"; };
+		B632FDB02B97846D00EE2CA8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			children = (
 				B632FD912B96164A00EE2CA8 /* WTError.swift */,
 				B632FDA62B97127000EE2CA8 /* UIHelper.swift */,
+				B632FDB02B97846D00EE2CA8 /* Constants.swift */,
 			);
 			path = Ultilities;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B632FDAC2B975A8100EE2CA8 /* WTItemInfoView.swift in Sources */,
+				B632FDB12B97846D00EE2CA8 /* Constants.swift in Sources */,
 				B632FDAF2B975C2E00EE2CA8 /* CityVC.swift in Sources */,
 				B632FD792B95BDB000EE2CA8 /* HomeVC.swift in Sources */,
 				B632FD962B961A7700EE2CA8 /* WTEmptyStateView.swift in Sources */,

@@ -28,9 +28,24 @@ class CityVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 		view.backgroundColor = .systemBackground
+		configureHelpButton()
 		configureItems()
 		configureVC()
     }
+	
+	private func configureHelpButton() {
+		let helpButton = UIBarButtonItem(image: UIImage(systemName: "info.circle"), style: .done, target: self, action: #selector(helpButton))
+		navigationItem.rightBarButtonItem = helpButton
+	}
+	
+	@objc func helpButton() {
+		guard let url = URL(string: AllURL.guidance) else {
+			presentAlert(title: "Invalid URL", message: "The url attached is invalid.", buttonTitle: "Ok")
+			return
+		}
+		
+		presentSafariVC(with: url)
+	}
 	
 	private func configureItems() {
 		latInfoView.set(title: "Latitude:", info: String(location.coord.lat))
