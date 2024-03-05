@@ -34,12 +34,19 @@ class HomeVC: UIViewController {
 	func configureTableView() {
 		view.addSubview(tableView)
 		
-		tableView.frame         = view.bounds // fill the whole screen
 		tableView.rowHeight     = 80
 		tableView.delegate      = self
 		tableView.dataSource    = self
+		tableView.translatesAutoresizingMaskIntoConstraints = false
 		
 		tableView.register(BookmarkCell.self, forCellReuseIdentifier: BookmarkCell.reuseID)
+		
+		NSLayoutConstraint.activate([
+			tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+			tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+			tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+			tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+		])
 	}
 	
 	@objc func addLocButton() {

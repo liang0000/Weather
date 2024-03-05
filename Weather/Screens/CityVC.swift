@@ -53,8 +53,8 @@ class CityVC: UIViewController {
 			itemView.translatesAutoresizingMaskIntoConstraints = false
 			
 			NSLayoutConstraint.activate([
-				itemView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
-				itemView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: padding),
+				itemView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: padding),
+				itemView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: padding),
 			])
 		}
 		
