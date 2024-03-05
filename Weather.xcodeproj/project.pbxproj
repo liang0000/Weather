@@ -12,13 +12,19 @@
 		B632FD792B95BDB000EE2CA8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FD782B95BDB000EE2CA8 /* HomeVC.swift */; };
 		B632FD7E2B95BDB300EE2CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B632FD7D2B95BDB300EE2CA8 /* Assets.xcassets */; };
 		B632FD812B95BDB300EE2CA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B632FD7F2B95BDB300EE2CA8 /* LaunchScreen.storyboard */; };
-		B632FD8B2B95DDE500EE2CA8 /* CityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FD8A2B95DDE500EE2CA8 /* CityVC.swift */; };
 		B632FD8F2B96109800EE2CA8 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FD8E2B96109800EE2CA8 /* Location.swift */; };
 		B632FD922B96164A00EE2CA8 /* WTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FD912B96164A00EE2CA8 /* WTError.swift */; };
 		B632FD962B961A7700EE2CA8 /* WTEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FD952B961A7700EE2CA8 /* WTEmptyStateView.swift */; };
 		B632FD982B961AC400EE2CA8 /* WTTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FD972B961AC400EE2CA8 /* WTTitleLabel.swift */; };
 		B632FD9C2B96225800EE2CA8 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FD9B2B96225800EE2CA8 /* UIViewController+Ext.swift */; };
 		B632FD9E2B9625B600EE2CA8 /* WTBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FD9D2B9625B600EE2CA8 /* WTBodyLabel.swift */; };
+		B632FDA12B96B3E400EE2CA8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FDA02B96B3E400EE2CA8 /* NetworkManager.swift */; };
+		B632FDA32B96B3F000EE2CA8 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FDA22B96B3F000EE2CA8 /* PersistenceManager.swift */; };
+		B632FDA52B96BB5800EE2CA8 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FDA42B96BB5800EE2CA8 /* MapVC.swift */; };
+		B632FDA72B97127000EE2CA8 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FDA62B97127000EE2CA8 /* UIHelper.swift */; };
+		B632FDA92B971A9E00EE2CA8 /* BookmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FDA82B971A9E00EE2CA8 /* BookmarkCell.swift */; };
+		B632FDAC2B975A8100EE2CA8 /* WTItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FDAB2B975A8100EE2CA8 /* WTItemInfoView.swift */; };
+		B632FDAF2B975C2E00EE2CA8 /* CityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FDAE2B975C2E00EE2CA8 /* CityVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,13 +35,19 @@
 		B632FD7D2B95BDB300EE2CA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B632FD802B95BDB300EE2CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B632FD822B95BDB300EE2CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B632FD8A2B95DDE500EE2CA8 /* CityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityVC.swift; sourceTree = "<group>"; };
 		B632FD8E2B96109800EE2CA8 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		B632FD912B96164A00EE2CA8 /* WTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTError.swift; sourceTree = "<group>"; };
 		B632FD952B961A7700EE2CA8 /* WTEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTEmptyStateView.swift; sourceTree = "<group>"; };
 		B632FD972B961AC400EE2CA8 /* WTTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTTitleLabel.swift; sourceTree = "<group>"; };
 		B632FD9B2B96225800EE2CA8 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		B632FD9D2B9625B600EE2CA8 /* WTBodyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTBodyLabel.swift; sourceTree = "<group>"; };
+		B632FDA02B96B3E400EE2CA8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B632FDA22B96B3F000EE2CA8 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		B632FDA42B96BB5800EE2CA8 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		B632FDA62B97127000EE2CA8 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		B632FDA82B971A9E00EE2CA8 /* BookmarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCell.swift; sourceTree = "<group>"; };
+		B632FDAB2B975A8100EE2CA8 /* WTItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTItemInfoView.swift; sourceTree = "<group>"; };
+		B632FDAE2B975C2E00EE2CA8 /* CityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,7 @@
 				B632FD762B95BDB000EE2CA8 /* SceneDelegate.swift */,
 				B632FD8C2B95DDEF00EE2CA8 /* Screens */,
 				B632FD932B961A1B00EE2CA8 /* Custom Views */,
+				B632FD9F2B96B35400EE2CA8 /* Managers */,
 				B632FD902B96162200EE2CA8 /* Ultilities */,
 				B632FD8D2B96108200EE2CA8 /* Models */,
 				B632FD9A2B96223D00EE2CA8 /* Extensions */,
@@ -86,7 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				B632FD782B95BDB000EE2CA8 /* HomeVC.swift */,
-				B632FD8A2B95DDE500EE2CA8 /* CityVC.swift */,
+				B632FDA42B96BB5800EE2CA8 /* MapVC.swift */,
+				B632FDAE2B975C2E00EE2CA8 /* CityVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -103,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				B632FD912B96164A00EE2CA8 /* WTError.swift */,
+				B632FDA62B97127000EE2CA8 /* UIHelper.swift */,
 			);
 			path = Ultilities;
 			sourceTree = "<group>";
@@ -110,6 +125,7 @@
 		B632FD932B961A1B00EE2CA8 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				B632FDAA2B971AA500EE2CA8 /* Cells */,
 				B632FD992B961ACB00EE2CA8 /* Labels */,
 				B632FD942B961A3D00EE2CA8 /* Views */,
 			);
@@ -120,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				B632FD952B961A7700EE2CA8 /* WTEmptyStateView.swift */,
+				B632FDAB2B975A8100EE2CA8 /* WTItemInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,6 +156,23 @@
 				B632FD9B2B96225800EE2CA8 /* UIViewController+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B632FD9F2B96B35400EE2CA8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B632FDA02B96B3E400EE2CA8 /* NetworkManager.swift */,
+				B632FDA22B96B3F000EE2CA8 /* PersistenceManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B632FDAA2B971AA500EE2CA8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B632FDA82B971A9E00EE2CA8 /* BookmarkCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,16 +245,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B632FDAC2B975A8100EE2CA8 /* WTItemInfoView.swift in Sources */,
+				B632FDAF2B975C2E00EE2CA8 /* CityVC.swift in Sources */,
 				B632FD792B95BDB000EE2CA8 /* HomeVC.swift in Sources */,
 				B632FD962B961A7700EE2CA8 /* WTEmptyStateView.swift in Sources */,
+				B632FDA52B96BB5800EE2CA8 /* MapVC.swift in Sources */,
 				B632FD982B961AC400EE2CA8 /* WTTitleLabel.swift in Sources */,
-				B632FD8B2B95DDE500EE2CA8 /* CityVC.swift in Sources */,
+				B632FDA32B96B3F000EE2CA8 /* PersistenceManager.swift in Sources */,
+				B632FDA92B971A9E00EE2CA8 /* BookmarkCell.swift in Sources */,
+				B632FDA12B96B3E400EE2CA8 /* NetworkManager.swift in Sources */,
 				B632FD8F2B96109800EE2CA8 /* Location.swift in Sources */,
 				B632FD922B96164A00EE2CA8 /* WTError.swift in Sources */,
 				B632FD752B95BDB000EE2CA8 /* AppDelegate.swift in Sources */,
 				B632FD772B95BDB000EE2CA8 /* SceneDelegate.swift in Sources */,
 				B632FD9C2B96225800EE2CA8 /* UIViewController+Ext.swift in Sources */,
 				B632FD9E2B9625B600EE2CA8 /* WTBodyLabel.swift in Sources */,
+				B632FDA72B97127000EE2CA8 /* UIHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

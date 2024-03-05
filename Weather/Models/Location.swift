@@ -6,9 +6,15 @@ import Foundation
 struct Location: Codable, Hashable, Identifiable {
 	let id: Int
 	let name: String
+	let coord: Coord
 	let main: Main
 	let wind: Wind
 	let sys: Sys
+	
+	struct Coord: Codable, Hashable {
+		let lat: Double
+		let lon: Double
+	}
 	
 	struct Main: Codable, Hashable {
 		let temp: Double
@@ -16,12 +22,12 @@ struct Location: Codable, Hashable, Identifiable {
 	}
 	
 	struct Wind: Codable, Hashable {
-		let speed: Double
-		let deg: Int
-		let gust: Double
+		var speed: Double?
+		var deg: Int?
+		var gust: Double?
 	}
 	
 	struct Sys: Codable, Hashable {
-		let country: String
+		var country: String?
 	}
 }

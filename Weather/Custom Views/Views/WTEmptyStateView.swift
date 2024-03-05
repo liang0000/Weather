@@ -17,16 +17,16 @@ class WTEmptyStateView: UIView {
 	}
 	
 	private func configure() {
-		let padding: CGFloat = 40
+		let padding: CGFloat 	= 40
 		
 		addSubview(messageTitle)
 		addSubview(messageBody)
 		
-		backgroundColor 	= .systemBackground
-		messageTitle.text 	= "No Location Added"
-		messageTitle.textColor = .secondaryLabel
+		backgroundColor 		= .systemBackground
+		messageTitle.text 		= "No Location Added"
+		messageTitle.textColor 	= .secondaryLabel
 		
-		messageBody.text 	= "Add one from top right + button."
+		messageBody.text 		= "Add one from top right + button."
 		
 		NSLayoutConstraint.activate([
 			messageTitle.centerYAnchor.constraint(equalTo: centerYAnchor),
