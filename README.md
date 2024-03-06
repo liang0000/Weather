@@ -7,6 +7,7 @@
 ## Map Screen
 ### Pin, Street Name, Landscape
 <img src="https://github.com/liang0000/Weather/assets/54095039/1095966e-c4e4-4cd6-9a97-4f1db5f4f989" width="250">
+<img src="https://github.com/liang0000/Weather/assets/54095039/0e9c27d5-87f6-4dac-8780-fe3470c0f6e1" width="500">
 
 ## City Screen
 ### City info, Landscape
