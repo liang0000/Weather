@@ -24,9 +24,22 @@ extension UIViewController {
 		}
 	}
 	
+	func presentOptionAlert(title: String, message: String, buttonTitle: String, handler: @escaping (UIAlertAction) -> Void) {
+		DispatchQueue.main.async {
+			let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+			
+			let settingsAction = UIAlertAction(title: buttonTitle, style: .destructive, handler: handler)
+			alertController.addAction(settingsAction)
+			
+			let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+			alertController.addAction(cancelAction)
+			
+			self.present(alertController, animated: true, completion: nil)
+		}
+	}
+	
 	func presentSafariVC(with url: URL) {
 		let safariVC = SFSafariViewController(url: url)
-//		safariVC.preferredControlTintColor = .systemGreen
 		present(safariVC, animated: true)
 	}
 	

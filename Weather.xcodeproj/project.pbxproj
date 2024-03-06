@@ -26,6 +26,8 @@
 		B632FDAC2B975A8100EE2CA8 /* WTItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FDAB2B975A8100EE2CA8 /* WTItemInfoView.swift */; };
 		B632FDAF2B975C2E00EE2CA8 /* CityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FDAE2B975C2E00EE2CA8 /* CityVC.swift */; };
 		B632FDB12B97846D00EE2CA8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FDB02B97846D00EE2CA8 /* Constants.swift */; };
+		B632FDB32B982A5B00EE2CA8 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FDB22B982A5B00EE2CA8 /* SettingVC.swift */; };
+		B632FDB62B98303900EE2CA8 /* RowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632FDB52B98303900EE2CA8 /* RowButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		B632FDAB2B975A8100EE2CA8 /* WTItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTItemInfoView.swift; sourceTree = "<group>"; };
 		B632FDAE2B975C2E00EE2CA8 /* CityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityVC.swift; sourceTree = "<group>"; };
 		B632FDB02B97846D00EE2CA8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B632FDB22B982A5B00EE2CA8 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		B632FDB52B98303900EE2CA8 /* RowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 				B632FD782B95BDB000EE2CA8 /* HomeVC.swift */,
 				B632FDA42B96BB5800EE2CA8 /* MapVC.swift */,
 				B632FDAE2B975C2E00EE2CA8 /* CityVC.swift */,
+				B632FDB22B982A5B00EE2CA8 /* SettingVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 		B632FD932B961A1B00EE2CA8 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				B632FDB42B98301500EE2CA8 /* Buttons */,
 				B632FDAA2B971AA500EE2CA8 /* Cells */,
 				B632FD992B961ACB00EE2CA8 /* Labels */,
 				B632FD942B961A3D00EE2CA8 /* Views */,
@@ -176,6 +182,14 @@
 				B632FDA82B971A9E00EE2CA8 /* BookmarkCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		B632FDB42B98301500EE2CA8 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				B632FDB52B98303900EE2CA8 /* RowButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +263,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B632FDAC2B975A8100EE2CA8 /* WTItemInfoView.swift in Sources */,
+				B632FDB32B982A5B00EE2CA8 /* SettingVC.swift in Sources */,
 				B632FDB12B97846D00EE2CA8 /* Constants.swift in Sources */,
 				B632FDAF2B975C2E00EE2CA8 /* CityVC.swift in Sources */,
 				B632FD792B95BDB000EE2CA8 /* HomeVC.swift in Sources */,
+				B632FDB62B98303900EE2CA8 /* RowButton.swift in Sources */,
 				B632FD962B961A7700EE2CA8 /* WTEmptyStateView.swift in Sources */,
 				B632FDA52B96BB5800EE2CA8 /* MapVC.swift in Sources */,
 				B632FD982B961AC400EE2CA8 /* WTTitleLabel.swift in Sources */,

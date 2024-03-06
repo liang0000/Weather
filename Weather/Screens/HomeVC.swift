@@ -33,7 +33,6 @@ class HomeVC: UIViewController {
 	}
 	
 	func configureVC() {
-		title 					= "Locations"
 		view.backgroundColor 	= .systemBackground
 		navigationController?.navigationBar.prefersLargeTitles = true
 		
