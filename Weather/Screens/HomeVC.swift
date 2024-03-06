@@ -1,4 +1,4 @@
-//
+	//
 
 
 import UIKit
@@ -10,10 +10,20 @@ protocol HomeVCDelegate: AnyObject {
 class HomeVC: UIViewController {
 	let tableView            	= UITableView()
 	var bookmarks: [Location] 	= []
+	var filteredBookmarks: [Location] = []
+	
+	var isSearching: Bool {
+		return navigationItem.searchController?.isActive ?? false && !searchBarIsEmpty
+	}
+	
+	var searchBarIsEmpty: Bool {
+		return navigationItem.searchController?.searchBar.text?.isEmpty ?? true
+	}
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		configureVC()
+		configureSearchController()
 		configureTableView()
 	}
 	
@@ -29,6 +39,14 @@ class HomeVC: UIViewController {
 		
 		let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addLocButton))
 		navigationItem.rightBarButtonItem = addButton
+	}
+	
+	func configureSearchController() {
+		let searchController = UISearchController()
+		searchController.searchResultsUpdater = self
+		searchController.searchBar.delegate = self
+		searchController.searchBar.placeholder = "Search for a location"
+		navigationItem.searchController = searchController
 	}
 	
 	func configureTableView() {
@@ -81,30 +99,39 @@ class HomeVC: UIViewController {
 }
 
 extension HomeVC: UITableViewDataSource, UITableViewDelegate {
-	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { // rows in array
-		return bookmarks.count
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return (isSearching ? filteredBookmarks : bookmarks).count
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: BookmarkCell.reuseID) as! BookmarkCell
-		let bookmark = bookmarks[indexPath.row]
+		let bookmark = (isSearching ? filteredBookmarks : bookmarks)[indexPath.row]
 		cell.set(bookmark: bookmark)
 		return cell
 	}
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		let bookmark    = bookmarks[indexPath.row]
-		let destVC      = CityVC(location: bookmark)
-		destVC.title    = bookmark.name
-
+		let bookmark = (isSearching ? filteredBookmarks : bookmarks)[indexPath.row]
+		let destVC = CityVC(location: bookmark)
+		destVC.title = bookmark.name
 		show(destVC, sender: self)
 	}
 	
 	func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
 		guard editingStyle == .delete else { return }
 		
-		let bookmark = bookmarks[indexPath.row]
-		bookmarks.remove(at: indexPath.row)
+		let bookmark: Location
+		
+		if isSearching {
+			bookmark = filteredBookmarks[indexPath.row]
+			if let indexToRemove = bookmarks.firstIndex(of: bookmark) {
+				bookmarks.remove(at: indexToRemove)
+			}
+			filteredBookmarks.remove(at: indexPath.row)
+		} else {
+			bookmark = bookmarks[indexPath.row]
+			bookmarks.remove(at: indexPath.row)
+		}
 		tableView.deleteRows(at: [indexPath], with: .left)
 		
 		PersistenceManager.updateWith(bookmark: bookmark, actionType: .remove) { [weak self] error in
@@ -112,6 +139,19 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
 			guard let error = error else { return }
 			self.presentAlert(title: "Unable to remove", message: error.rawValue, buttonTitle: "Ok")
 		}
+	}
+}
+
+extension HomeVC: UISearchResultsUpdating, UISearchBarDelegate {
+	func updateSearchResults(for searchController: UISearchController) {
+		guard let searchText = searchController.searchBar.text else { return }
+		filteredBookmarks = bookmarks.filter { $0.name.lowercased().contains(searchText.lowercased()) }
+		tableView.reloadData()
+	}
+	
+	func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+		filteredBookmarks.removeAll()
+		tableView.reloadData()
 	}
 }
 
