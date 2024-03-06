@@ -1,20 +1,25 @@
 ## Home Screen
-### Table List, Alert, Empty List, Delete, Search, Landscape
-<img src="https://github.com/liang0000/Weather/assets/54095039/a3320073-5df7-470c-a823-4a60c17354eb" width="250"> 
-<img src="https://github.com/liang0000/Weather/assets/54095039/711c9a38-54ef-4713-9a65-7824c24c4d76" width="250"> 
-<img src="https://github.com/liang0000/Weather/assets/54095039/4f2df35b-d268-406c-9bf4-c75ca6a0d7c9" width="250"> 
-<img src="https://github.com/liang0000/Weather/assets/54095039/88cc09c4-3b5b-4fcd-8ad2-e905d0b200bf" width="250">
-<img src="https://github.com/liang0000/Weather/assets/54095039/f7e18838-ea9d-4ed6-a26e-8450bb6fa21e" width="250">
-<img src="https://github.com/liang0000/Weather/assets/54095039/bb604734-6fd3-4428-8b4f-a60e054e6baf" width="250">
-<img src="https://github.com/liang0000/Weather/assets/54095039/e855b6a0-54ea-4525-a76f-3995a7ee3d50" width="500">
+### Empty List, Table List, Delete, Search, Landscape
+<img src="https://github.com/liang0000/Weather/assets/54095039/0227b1d2-576a-4e10-ab86-ac4d2655cc4e" width="250"> 
+<img src="https://github.com/liang0000/Weather/assets/54095039/fa402174-2e16-41bd-a6a5-4ea1ef95ac70" width="250"> 
+<img src="https://github.com/liang0000/Weather/assets/54095039/f8fd3cfa-a689-4a13-b9c0-f5d2c0fa3923" width="250"> 
+<img src="https://github.com/liang0000/Weather/assets/54095039/aa023a4c-768c-4ad5-99ba-119e1b1187d9" width="250"> 
+<img src="https://github.com/liang0000/Weather/assets/54095039/82575422-ac16-40f7-8e14-153d86968caa" width="500"> 
 
 ## Map Screen
-### Pin, Street Name, Landscape
+### Pin, Street Name, Loading, Landscape
 <img src="https://github.com/liang0000/Weather/assets/54095039/1095966e-c4e4-4cd6-9a97-4f1db5f4f989" width="250">
+<img src="https://github.com/liang0000/Weather/assets/54095039/acc06974-6a78-4fc5-9a10-30ae1a9ff763" width="250">
 <img src="https://github.com/liang0000/Weather/assets/54095039/0e9c27d5-87f6-4dac-8780-fe3470c0f6e1" width="500">
 
 ## City Screen
 ### City Info, Webview Guidance, Landscape
-<img src="https://github.com/liang0000/Weather/assets/54095039/9fdeaa1e-1b71-4fed-a3b0-38248e6e4319" width="250">
+<img src="https://github.com/liang0000/Weather/assets/54095039/56a3ed0c-06d4-4c60-a70a-6e72b569f335" width="250">
 <img src="https://github.com/liang0000/Weather/assets/54095039/c8c863ed-f545-45ca-a36b-e7b23410f122" width="250">
-<img src="https://github.com/liang0000/Weather/assets/54095039/eef49207-fde8-44fc-ab45-bdcaef8bd837" width="500">
+<img src="https://github.com/liang0000/Weather/assets/54095039/c177dc36-9bd4-4114-a2a3-14648415c2b4" width="500">
+
+## Setting Screen
+### Clear Data, Alert, Landscape
+<img src="https://github.com/liang0000/Weather/assets/54095039/32e42626-3e02-4358-ba4f-32bf39e87d80" width="250">
+<img src="https://github.com/liang0000/Weather/assets/54095039/c3034d9a-0281-45b4-be46-e7b49bf0605b" width="250">
+<img src="https://github.com/liang0000/Weather/assets/54095039/fcc273da-6460-4166-8675-f92316faad8a" width="500">
